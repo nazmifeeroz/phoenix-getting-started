@@ -1,7 +1,7 @@
 {application,discuss,
-             [{applications,[kernel,stdlib,elixir,logger,gettext,
-                             phoenix_pubsub,cowboy,phoenix_html,phoenix,
-                             postgrex,phoenix_ecto]},
+             [{applications,[kernel,stdlib,elixir,logger,ueberauth,
+                             ueberauth_github,gettext,phoenix_pubsub,cowboy,
+                             phoenix_html,phoenix,postgrex,phoenix_ecto]},
               {description,"discuss"},
               {modules,['Elixir.Discuss','Elixir.Discuss.ChannelCase',
                         'Elixir.Discuss.ConnCase','Elixir.Discuss.Endpoint',
@@ -20,4 +20,4 @@
               {registered,[]},
               {vsn,"0.0.1"},
               {mod,{'Elixir.Discuss',[]}},
-              {extra_applications,[logger]}]}.
+              {extra_applications,[logger,ueberauth,ueberauth_github]}]}.
