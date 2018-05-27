@@ -5,4 +5,7 @@
   </div>
 
   <%= submit "Save Topic", class: "btn btn-primary" %>
+  <%= link to: topic_path(@conn, :index), class: "btn black-text lime" do %>
+    Back
+  <% end %>
 <% end %>
