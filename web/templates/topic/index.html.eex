@@ -4,8 +4,6 @@
   <%= for topic <- @topics do %>
     <li class="collection-item">
       <%= link topic.title, to: topic_path(@conn, :show, topic) %>
-
-      <% IO.inspect(@conn.assigns.user)%>
  
       <%= if @conn.assigns.user && @conn.assigns.user.id == topic.user_id do %>
         <div class="right">
