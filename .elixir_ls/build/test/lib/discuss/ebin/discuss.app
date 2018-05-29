@@ -4,7 +4,7 @@
                              phoenix_html,phoenix,postgrex,phoenix_ecto]},
               {description,"discuss"},
               {modules,['Elixir.Discuss','Elixir.Discuss.AuthController',
-                        'Elixir.Discuss.ChannelCase',
+                        'Elixir.Discuss.ChannelCase','Elixir.Discuss.Comment',
                         'Elixir.Discuss.ConnCase','Elixir.Discuss.Endpoint',
                         'Elixir.Discuss.ErrorHelpers',
                         'Elixir.Discuss.ErrorView','Elixir.Discuss.Gettext',
